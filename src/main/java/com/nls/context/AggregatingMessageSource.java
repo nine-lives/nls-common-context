@@ -59,7 +59,7 @@ public class AggregatingMessageSource implements MessageSource {
     }
 
 
-    private class NoDefaultMessageSourceResolvable implements MessageSourceResolvable {
+    private static final class NoDefaultMessageSourceResolvable implements MessageSourceResolvable {
         private final MessageSourceResolvable delegate;
 
         private NoDefaultMessageSourceResolvable(MessageSourceResolvable delegate) {
